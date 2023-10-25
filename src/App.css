@@ -1,38 +1,118 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Smooch+Sans:wght@700&display=swap");
+body {
+  margin: 0;
+}
+.app {
+  display: flex;
+  justify-content: space-around;
+  color: #1c1c1c;
+}
+#app::before {
+  content: "";
+  position: absolute;
+ background: url("img/icons/Vector.svg") no-repeat; 
+  width: 70px;
+  height: 137px;
+  bottom: 80px;
+  left: 0;
+  z-index: 0;
+}
+.title {
+  font-family: "Smooch Sans";
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 60px;
+  margin: 0;
+}
+.sub-title {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
   text-align: center;
+  margin-bottom: 2em;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 3em;
 }
-
-.App-link {
-  color: #61dafb;
+input {
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 13px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  border: none;
+  background: #f2f2f2;
+  width: 100%;
+  height: 3.5em;
+  outline: none;
+  border-radius: 13px;
+  padding-left: 3em;
+}
+input::placeholder {
+  color: #1c1c1c;
+}
+input span {
+  position: absolute;
+  top: 22%;
+  left: 10px;
+}
+.hr {
+  font-family: Poppins;
+  text-align: center;
+  margin: 1.5em 0;
+  width: 100%;
+  position: relative;
+}
+.hr:after {
+  content: "";
+  width: 100%;
+  border-bottom: solid 1px#F0EDFF;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 1;
+}
+.hr-text {
+  width: auto;
+  display: inline-block;
+  z-index: 3;
+  padding: 0 10px;
+  position: relative;
+  background-color: #fff;
+}
+.btn {
+  font-family: Poppins;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 18px;
+  width: 100%;
+  height: 4em;
+  outline: none;
+  border-radius: 13px;
+  border: none;
+}
+.submit {
+  background: #1c1c1c;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+.lg {
+  border: 1px solid #1c1c1c;
+  background-color: transparent;
+  margin-bottom: 1.5em;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+}
+.right {
+  margin: 0.5vh 0;
+}
+.right img {
+  height: 98vh;
 }
