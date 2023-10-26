@@ -8,7 +8,7 @@ interface LoginButtonProps {
 const LoginButton: React.FC<LoginButtonProps> = ({ name, iconPath }) => {
   return (
     <button type="button" className="btn lg">
-      <span><img src={iconPath} alt={name} width={30} /></span>
+      <span><img src={iconPath} alt={name} /></span>
       Login with <b>{name}</b>
     </button>
   );

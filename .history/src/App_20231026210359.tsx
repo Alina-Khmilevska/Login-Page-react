@@ -37,14 +37,7 @@ const App: React.FC = () => {
   ]);
 
   const lgButtons: LoginButtonInfo[] = [
-    {
-      name: "Google",
-      iconPath: "https://img.icons8.com/color/48/000000/google-logo.png",
-    },
-    {
-      name: "Facebook",
-      iconPath: "https://img.icons8.com/color/48/000000/facebook-new.png",
-    },
+    // ... same buttons as before
   ];
 
   return (

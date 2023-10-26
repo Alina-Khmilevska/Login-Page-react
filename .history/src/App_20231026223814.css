@@ -95,18 +95,9 @@ input span {
   border-radius: 13px;
   border: none;
 }
-.btn span {
+.bth span {
   display: flex;
   align-items: center;
-}
-.input-container {
-  position: relative;
-}
-.input-container img {
-  position: absolute;
-  z-index: 100;
-  top: 15%;
-  left: 10px;
 }
 .submit {
   background: #1c1c1c;

@@ -45,6 +45,10 @@ const App: React.FC = () => {
       name: "Facebook",
       iconPath: "https://img.icons8.com/color/48/000000/facebook-new.png",
     },
+    {
+      name: "Twitter",
+      iconPath: "https://img.icons8.com/color/48/000000/twitter.png",
+    },
   ];
 
   return (

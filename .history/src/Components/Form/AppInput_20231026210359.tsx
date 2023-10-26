@@ -9,7 +9,7 @@ interface AppInputProps {
 
 const AppInput: React.FC<AppInputProps> = ({ type, label, value, iconPath }) => {
   return (
-    <div className='input-container'>
+    <div>
       {value.length === 0 && <img src={iconPath} alt={label} />}
       <input
         value={value}
